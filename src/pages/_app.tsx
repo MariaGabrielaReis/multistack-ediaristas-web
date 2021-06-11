@@ -2,6 +2,7 @@ import "@styles/globals.css";
 import { ThemeProvider } from "@material-ui/core";
 import theme from "ui/themes/theme";
 import Head from "next/head";
+import Header from "ui/components/surfaces/Header/Header";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps }) {
         <link href="/fonts/tw-icons/css/treinaweb-icons.css" rel="stylesheet" />
       </Head>
       <ThemeProvider theme={theme}>
+        <Header />
         <Component {...pageProps} />
       </ThemeProvider>
     </>
