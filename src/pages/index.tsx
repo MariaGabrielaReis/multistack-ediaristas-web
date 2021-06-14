@@ -8,8 +8,11 @@ import {
   ProContainer,
 } from "ui/styles/pages/index.style";
 import { Button, Typography, Container } from "@material-ui/core";
+import useIndex from "data/hooks/pages/useIndex.page";
 
 export default function Home() {
+  const { cep, setCep, cepValid } = useIndex();
+
   return (
     <div>
       <SafeEnvironment />
@@ -27,6 +30,8 @@ export default function Home() {
             label={"Digite seu CEP"}
             fullWidth
             variant={"outlined"}
+            value={cep}
+            onChange={(event) => setCep(event.target.value)}
           />
 
           <Typography color={"error"}>CEP inválido</Typography>
