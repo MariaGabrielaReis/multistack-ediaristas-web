@@ -1,34 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1  align="center">
+  <img
+    width="280px"
+    src="./public/img/logos/logo.svg"
+  />
+</h1>
 
-## Getting Started
+<p align="center" >
+  <a href="#projeto">Sobre a aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tecs">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   <a href="#demo">Demonstração</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#requisitos">Como rodar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#licenca">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#dev">Dev</a>
+</p>
 
-First, run the development server:
+<span id="projeto">
+  
+## :bookmark_tabs: Sobre a aplicação
+O evento "Multi-stack", realizado em junho de 2021, foi promovido pela Treina Web e incluiu a criação de uma aplicação chamada "E-Diaristas", que tinha o objetivo de ser uma ferramenta para busca de profissionais especializados em serviços domésticos, baseando a pesquisa no CEP do contratante e mostrando os profissionais que estivessem disponíveis para a região, contando também com avaliações dos clientes, formando uma reputação de até 5 estrelas para cada contratado.
+
+<span id="tecs">
+
+## 🛠️ Tecnologias
+
+As seguintes tecnologias, ferramentas e bibliotecas foram utilizadas neste evento:
+
+- [React](https://pt-br.reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Axios](https://axios-http.com/)
+- [Material UI](https://material-ui.com/pt/)
+
+<span id="demo">
+  
+## :desktop_computer: Demonstração
+Abaixo é possível encontrar uma demonstração das telas e funcionalidades do projeto, mas com alguns toques da autora, como aplicação de cores diferentes do layout original.
+
+> Em breve
+
+<span id="requisitos">
+
+## :gear: Como rodar
+
+Depois de baixar o [Node.js](https://nodejs.org/en/) e clonar o repositório (ou baixá-lo):
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Acesse a pasta principal do projeto
+$ cd src
+
+# Instale as dependências do projeto
+$ npm install
+# ou
+$ yarn add
+
+# Inicie o servidor
+$ npm run dev
+
+# Abra [http://localhost:3000](http://localhost:3000) no navegador
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<span id="licenca">
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## :page_with_curl: Licença
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<br>
 
-## Learn More
+<span id="dev">
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> Maria Gabriela Reis, 2021 :sparkles: <br>
+> ❤️ [Github](https://github.com/MariaGabrielaReis)<br>
+> 💙 [Linkedin](https://www.linkedin.com/in/mariagabrielareis/)<br>
