@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import { UserShortInterface } from "data/@types/UserInterface";
 import { ValidationService } from "data/services/validationService";
+import { ApiService } from "data/services/ApiService";
 
 export default function useIndex() {
   const [cep, setCep] = useState(""),
@@ -13,5 +14,35 @@ export default function useIndex() {
     [housekeeper, setHousekeeper] = useState([] as UserShortInterface[]),
     [housekeeperRemaining, setHousekeeperRemaining] = useState(0);
 
-  return { cep, setCep, cepValid };
+  async function searchPro(cep: string) {
+    setSearchDone(false);
+    setLoading(true);
+    setError("");
+
+    try {
+      const { data } = await ApiService.get<{
+        diaristas: UserShortInterface[];
+        quantidade_diaristas: number;
+      }>("/api/diaristas-cidade?cep=" + cep.replace(/\D/g, ""));
+
+      setHousekeeper(data.diaristas);
+      setHousekeeperRemaining(data.quantidade_diaristas);
+      setSearchDone(true);
+      setLoading(false);
+    } catch (error) {
+      setError("CEP não encontrado");
+      setLoading(false);
+    }
+  }
+  return {
+    cep,
+    setCep,
+    cepValid,
+    searchPro,
+    error,
+    housekeeper,
+    searchDone,
+    loading,
+    housekeeperRemaining,
+  };
 }
