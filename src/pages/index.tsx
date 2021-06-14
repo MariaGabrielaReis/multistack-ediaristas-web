@@ -18,6 +18,24 @@ export default function Home() {
         rating={5}
         description={"São José dos Campos"}
       />
+      <UserInformation
+        name={"Wallace"}
+        picture={""}
+        rating={4}
+        description={"Monteiro Lobato"}
+      />
+      <UserInformation
+        name={"Caio"}
+        picture={""}
+        rating={4}
+        description={"Taubaté"}
+      />
+      <UserInformation
+        name={"Giovanna"}
+        picture={""}
+        rating={5}
+        description={"São José dos Campos"}
+      />
     </div>
   );
 }
