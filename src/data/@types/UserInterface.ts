@@ -1,6 +1,6 @@
 export interface UserShortInterface {
   nome_completo: string;
-  foto_usuario?: string;
+  foto?: string;
   reputacao?: number;
   cidade: string;
 }

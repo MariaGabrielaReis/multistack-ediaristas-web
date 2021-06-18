@@ -23,7 +23,7 @@ export default function useIndex() {
       const { data } = await ApiService.get<{
         diaristas: UserShortInterface[];
         quantidade_diaristas: number;
-      }>("/api/diaristas-cidade?cep=" + cep.replace(/\D/g, ""));
+      }>("/api/city-housekeepers?cep=" + cep.replace(/\D/g, ""));
 
       setHousekeeper(data.diaristas);
       setHousekeeperRemaining(data.quantidade_diaristas);

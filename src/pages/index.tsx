@@ -71,7 +71,7 @@ export default function Home() {
                     <UserInformation
                       key={index}
                       name={item.nome_completo}
-                      picture={item.foto_usuario}
+                      picture={item.foto}
                       rating={item.reputacao}
                       description={item.cidade}
                     />
